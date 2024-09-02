@@ -58,6 +58,9 @@ public class ReqResTests {
         Assert.assertEquals(usersList.getData().get(0).getAvatar(), "https://reqres.in/img/faces/7-image.jpg");
     }
 
+    /**
+     * Get single user test.
+     */
     @Test(description = "Get single user and check status code and all exist fields")
     public void getSingleUserTest(){
         String body =
@@ -78,6 +81,9 @@ public class ReqResTests {
         Assert.assertEquals(singleUser.getSupport().getText(), "To keep ReqRes free, contributions towards server costs are appreciated!");
     }
 
+    /**
+     * Get single user not found test.
+     */
     @Test(description = "Single user not found and check status code")
     public void getSingleUserNotFoundTest(){
         given()
@@ -88,6 +94,9 @@ public class ReqResTests {
                 .statusCode(404);
     }
 
+    /**
+     * Get resources list test.
+     */
     @Test(description = "Get list of resources and check status code and all exist fields of the first resource")
     public void getResourcesListTest(){
         String body =
@@ -108,6 +117,9 @@ public class ReqResTests {
         softAssert.assertAll();
     }
 
+    /**
+     * Get single resource test.
+     */
     @Test(description = "Get single resource and check status code and all exist fields")
     public void getSingleResourceTest(){
         String body =
@@ -130,6 +142,9 @@ public class ReqResTests {
         softAssert.assertAll();
     }
 
+    /**
+     * Update single user test.
+     */
     @Test(description = "Update single user and check status code and all exist fields")
     public void updateSingleUserTest(){
         User user = User.builder()

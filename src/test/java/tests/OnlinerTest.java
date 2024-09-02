@@ -7,6 +7,9 @@ import static org.hamcrest.Matchers.equalTo;
 
 //https://www.onliner.by/sdapi/kurs/api/bestrate?currency=USD&type=nbrb
 public class OnlinerTest {
+    /**
+     * Get currency uds test.
+     */
     @Test
     public void getCurrencyUDSTest(){
         given()
@@ -16,6 +19,9 @@ public class OnlinerTest {
                 .statusCode(200);
     }
 
+    /**
+     * Get currency eur test.
+     */
     @Test
     public void getCurrencyEURTest(){
         given()
@@ -25,6 +31,9 @@ public class OnlinerTest {
                 .statusCode(200);
     }
 
+    /**
+     * Get currency rub test.
+     */
     @Test
     public void getCurrencyRUBTest(){
         given()
@@ -34,6 +43,9 @@ public class OnlinerTest {
                 .statusCode(200);
     }
 
+    /**
+     * Get currency usd amount test.
+     */
     @Test
     public void getCurrencyUSDAmountTest(){
         given()
