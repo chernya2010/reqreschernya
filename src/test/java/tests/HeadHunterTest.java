@@ -8,6 +8,9 @@ import static io.restassured.RestAssured.given;
 
 public class HeadHunterTest {
 
+    /**
+     * Qa automation search test.
+     */
     @Test
     public void qaAutomationSearchTest() {
         String body =
